@@ -8,6 +8,7 @@ EStyleSheet.build({
   $border: '#E2E2E2',
   $inputText: '#797977',
   $lightGray: '#F0F0F0',
+  $darktext: '#343434',
 });
 
 export default () => <CurrencyList />;
