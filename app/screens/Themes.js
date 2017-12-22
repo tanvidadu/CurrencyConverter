@@ -12,8 +12,12 @@ const styles = EStyleSheet.create({
 });
 
 class Themes extends Component {
+  static propTypes = {
+    navigation: PropTypes.object,
+  }
   handleColorThemePress = (color) => {
     console.log('Theme Selected', color);
+    this.props.navigation.goBack(null);
   }
   render() {
     return (
