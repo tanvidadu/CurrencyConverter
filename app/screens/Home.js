@@ -23,11 +23,11 @@ class Home extends Component {
   }
   handlePressBaseCurrency = () => {
     console.log('Press Base');
-    this.props.navigation.navigate('CurrencyList', { title: 'Base Currency' });
+    this.props.navigation.navigate('CurrencyList', { title: 'Base Currency', type: 'base' });
   }
   handlePressQuoteCurrency = () => {
     console.log('Press Quote');
-    this.props.navigation.navigate('CurrencyList', { title: 'Quote Currency' });
+    this.props.navigation.navigate('CurrencyList', { title: 'Quote Currency', type: 'quote' });
   }
   handleTextChange = (amount) => {
     this.props.dispatch(changeCurrencyAmount(amount));
